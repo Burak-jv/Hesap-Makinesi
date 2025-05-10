@@ -2,19 +2,19 @@
 
 Merhaba! Bu proje, Python ile geliştirilmiş ve Flask ile desteklenmiş bir hesap makinesi. Ama sıradan bir hesap makinesi değil! Sadece dört işlem yapmakla kalmıyor, aynı zamanda döviz dönüştürücü ve birkaç ekstra matematiksel işlemi de destekliyor.
 
-🚀 Neler Yapabilirsin?
+- Neler Yapabilirsin?
 
-🧩 Toplama, Çıkarma, Çarpma, Bölme
+-Toplama, Çıkarma, Çarpma, Bölme
 
-📊 Yüzde Hesaplama
+- Yüzde Hesaplama
 
-📈 Üs Alma ve Karekök Hesaplama
+- Üs Alma ve Karekök Hesaplama
 
-🔢 Logaritma, Sinüs ve Kosinüs Hesaplama
+- Logaritma, Sinüs ve Kosinüs Hesaplama
 
-💰 Döviz Dönüştürücü (USD, EUR ve diğer para birimlerinden anında TL'ye)
+- Döviz Dönüştürücü (USD, EUR ve diğer para birimlerinden anında TL'ye)
 
-🔧 Nasıl Kullanırsın?
+- Nasıl Kullanırsın?
 
 Proje dosyalarını indir ve bilgisayarında bir klasöre yerleştir.
 
@@ -31,7 +31,7 @@ Eğer telefonundan da kullanmak istersen:
 
 http://bilgisayar_IP_adresi:5000
 
-🚀 Projeyi Geliştirmek İstersen:
+- Projeyi Geliştirmek İstersen:
 
 Matematiksel işlemler listesine yenilerini ekleyebilirsin.
 

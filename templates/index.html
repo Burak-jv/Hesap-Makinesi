@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Burak'ın Hesap Makinesi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Burak'ın Oluşturduğu Hesap Makinesine Hoşgeldiniz!</h1>
+        
+        <h2>Hesap Makinesi</h2>
+        <form action="/hesapla" method="post">
+            <input type="number" name="sayi1" placeholder="Birinci Sayı" required>
+            <input type="number" name="sayi2" placeholder="İkinci Sayı" required>
+            <select name="islem">
+                <option value="toplama">Toplama</option>
+                <option value="cikarma">Çıkarma</option>
+                <option value="carpma">Çarpma</option>
+                <option value="bolme">Bölme</option>
+                <option value="us_alma">Üs Alma</option>
+                <option value="karekok">Karekök</option>
+                <option value="yuzde">Yüzde Hesaplama</option>
+                <option value="logaritma">Logaritma</option>
+                <option value="sinus">Sinüs</option>
+                <option value="cosinus">Kosinüs</option>
+            </select>
+            <button type="submit">Hesapla</button>
+        </form>
+
+        {% if sonuc %}
+        <div class="result">
+            <h3>Sonuç: {{ sonuc }}</h3>
+        </div>
+        {% endif %}
+
+        <h2>Döviz Dönüştürücü</h2>
+        <form action="/doviz" method="post">
+            <input type="number" name="miktar" placeholder="Miktar" required>
+            <input type="text" name="birim" placeholder="USD, EUR, GBP" required>
+            <button type="submit">Dönüştür</button>
+        </form>
+
+        {% if doviz_sonuc %}
+        <div class="result">
+            <h3>{{ doviz_sonuc }}</h3>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
+

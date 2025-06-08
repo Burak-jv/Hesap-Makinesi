@@ -1,6 +1,5 @@
-from flask import Flask, render_template, request, send_from_directory
+from flask import Flask, render_template, request
 import requests
-import os
 import math
 
 app = Flask(__name__)
@@ -26,11 +25,17 @@ def hesapla():
     elif islem == "us_alma":
         sonuc = sayi1 ** sayi2
     elif islem == "karekok":
-        sonuc = math.sqrt(sayi1)
+        if sayi1 < 0:
+            sonuc = "Hata: Negatif sayının karekökü alınamaz"
+        else:
+            sonuc = math.sqrt(sayi1)
     elif islem == "yuzde":
         sonuc = (sayi1 * sayi2) / 100
     elif islem == "logaritma":
-        sonuc = math.log(sayi1)
+        if sayi1 <= 0:
+            sonuc = "Hata: Logaritma için sayı pozitif olmalıdır"
+        else:
+            sonuc = math.log(sayi1)
     elif islem == "sinus":
         sonuc = math.sin(math.radians(sayi1))
     elif islem == "cosinus":
